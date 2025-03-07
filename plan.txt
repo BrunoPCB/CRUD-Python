@@ -1,0 +1,15 @@
+CRUD
+- Create
+- Read
+- Update
+- Delete
+
+We need to break down our development.
+- Database connection
+- Database Insert
+- Database Select
+- Database Delete
+- Database Update
+- UI design 
+
+First step: Create the user interface.
