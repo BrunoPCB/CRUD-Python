@@ -14,19 +14,19 @@ while not correct_input:
 
     correct_input = option.isalpha() and (option.lower() in 'isud')
 
-    if option.lower() == 'i':
-        # inserting
-        inserting()
-        ...
-    elif option.lower() == 's':
-        # selecting
-        selecting()
-        ...
-    elif option.lower() == 'u':
-        # updating
-        updating()
-        ...
-    elif option.lower() == 'd':
-        # deleting
-        deleting()
-        ...
+if option.lower() == 'i':
+    # inserting
+    inserting()
+    ...
+elif option.lower() == 's':
+    # selecting
+    selecting()
+    ...
+elif option.lower() == 'u':
+    # updating
+    updating()
+    ...
+elif option.lower() == 'd':
+    # deleting
+    deleting()
+    ...
