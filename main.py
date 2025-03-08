@@ -1,3 +1,5 @@
+from db_actions import deleting, inserting, selecting, updating
+
 # Main Interface
 print("Welcome to our Products Database.\n"
       "What do you want to do?\n"
@@ -6,7 +8,7 @@ print("Welcome to our Products Database.\n"
       "[U]pdate\n"
       "[D]elete\n")
 
-correct_input = True
+correct_input = False
 while not correct_input:
     option = input(": ")
 
@@ -14,13 +16,17 @@ while not correct_input:
 
     if option.lower() == 'i':
         # inserting
+        inserting()
         ...
     elif option.lower() == 's':
         # selecting
+        selecting()
         ...
     elif option.lower() == 'u':
         # updating
+        updating()
         ...
     elif option.lower() == 'd':
         # deleting
+        deleting()
         ...
