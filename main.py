@@ -1,4 +1,8 @@
-from db_actions import deleting, inserting, selecting, updating
+from db_actions import deleting, inserting, selecting, updating, create_table
+from os import system
+
+def clear_terminal():
+    system('cls')
 
 # Main Interface
 print("Welcome to our Products Database.\n"
@@ -16,6 +20,8 @@ while not correct_input:
 
 if option.lower() == 'i':
     # inserting
+    clear_terminal()
+    
     inserting()
     ...
 elif option.lower() == 's':
