@@ -13,3 +13,4 @@ We need to break down our development.
 - UI design 
 
 First step: Create the user interface.
+Second step: Create the actions will communicate with the database.
