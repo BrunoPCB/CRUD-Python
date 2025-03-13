@@ -92,3 +92,35 @@ def updating_into_DB(*prod_info_param):
     success_msg = f"The item was updated!"
 
     return execute_cursor(db_update, success_msg)
+
+
+def selection_from_DB():
+    select_DB = (f"SELECT * FROM {__db_tb_products}")
+
+    connection = create_conn() 
+    cursor = create_cursor(connection)     
+    try:
+        print('', 10 * '------')
+        print(f"|{'Index'.center(10)} | {'Name'.center(10)} | {'Amount'.center(10)} | {'Description'.center(20)} |")
+        print('', 10 * '------')
+
+        for item in cursor.execute(select_DB):            
+            index, product, amount, description = item
+            print(f"|{str(index).center(10)} | {product.center(10)} | {str(amount).center(10)} | {description.center(20)} |")
+        
+        print('', 10 * '------')
+
+
+
+
+
+
+
+
+
+    except Exception as e:
+        print(f"Exception: {e}")
+    
+    finally:
+        cursor.close()
+        connection.close()
