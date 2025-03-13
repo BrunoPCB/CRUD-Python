@@ -110,14 +110,6 @@ def selection_from_DB():
         
         print('', 10 * '------')
 
-
-
-
-
-
-
-
-
     except Exception as e:
         print(f"Exception: {e}")
     
