@@ -1,4 +1,4 @@
-from db_connection import create_table, inserting_into_DB, deleting_into_DB, updating_into_DB
+from db_connection import create_table, inserting_into_DB, deleting_into_DB, updating_into_DB, selection_from_DB
 
 def inserting():
     success = create_table()
@@ -21,9 +21,9 @@ def selecting():
     if not success:
         return    
 
-    amount_to_retrive = input("How much data do you want to retrieve: ")    
-
     # Function that will retrieve the data from the database
+    selection_from_DB()
+
 
 def updating():
     success = create_table()
