@@ -1,0 +1,17 @@
+CRUD
+- Create
+- Read
+- Update
+- Delete
+
+We need to break down our development.
+- Database connection
+- Database Insert
+- Database Select
+- Database Delete
+- Database Update
+- UI design 
+
+We need to create classes to make our system
+- Database connection
+- Database actions
